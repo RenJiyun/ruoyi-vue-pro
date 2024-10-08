@@ -13,11 +13,10 @@
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
+
     <description>
-        后端 Server 的主项目，通过引入需要 yudao-module-xxx 的依赖，
-        从而实现提供 RESTful API 给 yudao-ui-admin、yudao-ui-user 等前端项目。
-        本质上来说，它就是个空壳（容器）！
     </description>
+    
     <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
 
     <dependencies>
@@ -32,12 +31,19 @@
             <version>${revision}</version>
         </dependency>
 
-        <!-- 会员中心。默认注释，保证编译速度 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-module-member-biz</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+        <!-- 抖音弹幕游戏运营 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>yudao-module-douyin-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 会员中心 -->
+        <dependency>
+            <groupId>cn.iocoder.boot</groupId>
+            <artifactId>yudao-module-member-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- 数据报表。默认注释，保证编译速度 -->
 <!--        <dependency>-->
